@@ -18,6 +18,9 @@ def registerPage(request):
     context = {'form':form}
     return render(request, 'accounts/register.html', context)
 
+def loginPage(request):
+    context = {}
+    return render(request, 'accounts/login.html', context)
 
 def home(request):
     orders = Order.objects.all()
